@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :user_event do
-    user { nil }
-    event { nil }
-    participant_type { "MyString" }
+    user
+    event
+    participant_type { "Host" }
   end
 end

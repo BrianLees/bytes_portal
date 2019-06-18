@@ -1,3 +1,4 @@
 class Ingredient < ApplicationRecord
-  belongs_to :source
+  belongs_to :recipe
+  belongs_to :constituent
 end

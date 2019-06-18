@@ -16,7 +16,8 @@ RSpec.describe IndexEventOperation do
        event_id: event.id,
        event_description: event.description,
        participant_type: participant.participant_type,
-       location_name: event.location.name
+       location_name: event.location.name,
+       menu_title: event.menu.title
      }
     ]
   end

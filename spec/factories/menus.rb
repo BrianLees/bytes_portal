@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :menu do
-    description { "MyString" }
-    title { "MyString" }
-    years_involved { "MyString" }
+    description { "Description of menu" }
+    title { "Sushi" }
+    years_involved { "2019" }
   end
 end

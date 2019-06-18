@@ -4,7 +4,8 @@ class IndexEventOperation
   def initialize(user_id)
     @events = Event.joins(
       :participants,
-      :location
+      :location,
+      :menu
     ).where('participants.user_id = ?', user_id)
   end
 
@@ -15,7 +16,8 @@ class IndexEventOperation
       event_id: event.id,
       event_description: event.description,
       participant_type: event.participants.first.participant_type,
-      location_name: event.location.name
+      location_name: event.location.name,
+      menu_title: event.menu.title
     }
     end
   end

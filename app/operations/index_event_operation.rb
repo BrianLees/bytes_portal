@@ -10,7 +10,6 @@ class IndexEventOperation
   end
 
   def results
-    # binding.pry
     events.map do |event|
     {
       event_id: event.id,

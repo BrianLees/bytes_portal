@@ -1,3 +1,4 @@
-example_id                                               | status | run_time     |
--------------------------------------------------------- | ------ | ------------ |
-./spec/operations/index_event_operation_spec.rb[1:1:1:1] | passed | 2.09 seconds |
+example_id                                               | status | run_time      |
+-------------------------------------------------------- | ------ | ------------- |
+./spec/operations/index_event_operation_spec.rb[1:1:1:1] | passed | 2.22 seconds  |
+./spec/operations/index_event_operation_spec.rb[1:1:2:1] | passed | 0.065 seconds |

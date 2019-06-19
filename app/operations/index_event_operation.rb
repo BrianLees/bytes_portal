@@ -14,6 +14,7 @@ class IndexEventOperation
     {
       event_id: event.id,
       event_description: event.description,
+      event_time: event.event_time,
       participant_type: event.participants.first.participant_type,
       location_name: event.location.name,
       menu_title: event.menu.title

@@ -2,5 +2,5 @@ class Participant < ApplicationRecord
   belongs_to :user
   belongs_to :event
 
-  enum role: [:host, :guest]
+  enum participant_type: [:host, :guest]
 end

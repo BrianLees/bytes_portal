@@ -4,7 +4,12 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.all
+    @events = IndexEventOperation.new(user_id).results
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @events, status: 200 }
+    end
   end
 
   # GET /events/1

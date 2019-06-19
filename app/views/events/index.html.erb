@@ -8,21 +8,20 @@
       <th>Description</th>
       <th>Location</th>
       <th>Event time</th>
-      <th>Is approved</th>
-      <th colspan="3"></th>
+      <th>Menu</th>
+      <th>Participant Type</th>
+      <th colspan="5"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @events.each do |event| %>
       <tr>
-        <td><%= event.description %></td>
-        <td><%= event.location %></td>
-        <td><%= event.event_time %></td>
-        <td><%= event.is_approved %></td>
-        <td><%= link_to 'Show', event %></td>
-        <td><%= link_to 'Edit', edit_event_path(event) %></td>
-        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= event[:event_description] %></td>
+        <td><%= event[:location_name] %></td>
+        <td><%= event[:event_time].to_formatted_s(:long) %></td>
+        <td><%= event[:menu_title] %></td>
+        <td><%= event[:participant_type] %></td>
       </tr>
     <% end %>
   </tbody>

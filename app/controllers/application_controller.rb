@@ -9,4 +9,7 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:account_update, keys: [:name])
   end
 
+  def user_id
+    user_id = current_user.id
+  end
 end

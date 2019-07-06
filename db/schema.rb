@@ -76,7 +76,8 @@ ActiveRecord::Schema.define(version: 20190610025900) do
     t.datetime "updated_at", null: false
     t.datetime "deleted_at"
   end
-create_table "messages", force: :cascade do |t|
+
+  create_table "messages", force: :cascade do |t|
     t.boolean "rsvp"
     t.bigint "participant_id"
     t.boolean "is_paid"
